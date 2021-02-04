@@ -45,8 +45,21 @@ in the next step in "enode":<br>
 The "public key" is from the intial step.  The key must be from the second node created, in this case, node4.<br>
 At this point the nodes should be up and running.  Now we will use the application MyCrypto for testing:
 
+In the application we need to change the network to add a custom node with the custom information we set<br>
+in the genisis.  In the open fields use the following infomration:<br>
 
+Node Name: zbanknet<br>
+Network: Customer<br>
+Network Name: zbanknet<br>
+Currency: ETH<br>
+Chain ID: 3000 (Created in one of the inital steps)<br>
+URL: http://127.0.0.1:8545 (This is the default RPC port)<br>
 
+After clicking save and use we need to access our wallet by clicking on the Keystore File icon<br>
+Select wallet file inside Node3 directiory and put password that created in above step.<br>
+We can now see the account balance and want to run a test transaction.  Put in the public <br>
+address from node 4 created above and put in an amount to send between accounts.  After sending<br>
+the transaction should go from Pending to Succesful and the TX should look as follows:<br>
 
 ![transaction](https://github.com/dowdlea86/blockchain_testnet/blob/main/Screenshots/transaction.png)
 
