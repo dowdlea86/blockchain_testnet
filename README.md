@@ -24,7 +24,7 @@ for later referral.  The genesis block has now been configured.  Now we need to 
 genesis configuration specs into json files.  After configuring and exporting the configuration<br>
 should look as follows:<br>
 
-![top_20_teams](https://github.com/dowdlea86/blockchain_testnet/blob/main/Screenshots/zbanknet_config.png)
+![zbanknet_config](https://github.com/dowdlea86/blockchain_testnet/blob/main/Screenshots/zbanknet_config.png)
 
 We need to initialize the nodes, using geth run the following code:
 
@@ -46,6 +46,9 @@ The "public key" is from the intial step.  The key must be from the second node 
 At this point the nodes should be up and running.  Now we will use the application MyCrypto for testing:
 
 
+
+
+![transaction](https://github.com/dowdlea86/blockchain_testnet/blob/main/Screenshots/transaction.png)
 
 
 
