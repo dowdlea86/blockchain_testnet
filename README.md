@@ -32,7 +32,7 @@ We need to initialize the nodes, using geth run the following code:
 ./geth init zbanknet/zbanknet.json --datadir node4 
 
 At this point we have succesfully wrote the gensis state.  Now we can use the nodes to begin mining.<br>
-Use the following code to start the process:<br>:
+Use the following code to start the process:<br>
 
 ./geth --datadir node3 --unlock "public key" --mine --rpc --allow-insecure-unlock<br>
 
