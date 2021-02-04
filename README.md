@@ -24,7 +24,7 @@ for later referral.  The genesis block has now been configured.  Now we need to 
 genesis configuration specs into json files.  After configuring and exporting the configuration<br>
 should look as follows:<br>
 
-![top_20_teams](https://github.com/dowdlea86/blockchain_testnet/blob/Screenshots/zbanknet_config.png)
+![top_20_teams](https://github.com/dowdlea86/blockchain_testnet/blob/main/Screenshots/zbanknet_config.png)
 
 We need to initialize the nodes, using geth run the following code:
 
