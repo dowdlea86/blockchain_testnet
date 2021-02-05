@@ -28,22 +28,26 @@ should look as follows:<br>
 
 We need to initialize the nodes, using geth, run the following code:<br>
 
-./geth init zbanknet/zbanknet.json --datadir node3 
-./geth init zbanknet/zbanknet.json --datadir node4 
+./geth init zbanknet/zbanknet.json --datadir node3<br> 
+./geth init zbanknet/zbanknet.json --datadir node4<br> 
 
 At this point we have succesfully wrote the gensis state.  Now we can use the nodes to begin mining.<br>
 Use the following code to start the process:<br>
 
 ./geth --datadir node3 --unlock "public key" --mine --rpc --allow-insecure-unlock<br>
 
-In the public key section use the key from node3 in the intial step.  After the process<br>
-has started to copy the enode information in the code and save seperatley.  This is important<br>
-in the next step in "enode":<br>  
+In the public key section use the key from node3 in the intial step.  The mine flag instructs the<br> 
+node to mine RPC stands for remote procedure call. This allowes the nodes to speak to each other in<br> 
+the network.  The flag insercure unlock allows the nodes over security measures. After the process<br>
+has started to copy the enode information in the code and save seperatley.  This is important in<br> 
+the next step in "enode":<br>  
 
 /geth --datadir node4 --unlock "public key" --mine --port 3034 --bootnodes "enode" --allow-insecure-unlock<br>
 
 The "public key" is from the intial step.  The key must be from the second node created, in this case, node4.<br>
-At this point the nodes should be up and running.  Now we will use the application MyCrypto for testing:<br>
+We need to specify another port, node3 used 3033, so in this case we need another port, 3034.<br>
+Copy in the enode in node3 creation by creating a flag bootnodes "enode", put the enode address in the quotation<br>
+marks. At this point the nodes should be up and running.  Now we will use the application MyCrypto for testing:<br>
 
 In the application, we need to change the network to add a custom node with the custom information we set<br>
 in the genisis.  In the open fields use the following infomration:<br>
